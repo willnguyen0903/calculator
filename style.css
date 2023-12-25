@@ -1,0 +1,30 @@
+body{
+  background-color: rgb(223, 161, 85);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 350px;
+  background-image: url("images/catbg.jpg");
+  /* background-color: rgb(88, 211, 170); */
+  padding: 30px 30px 30px 30px;
+  border-radius: 20px;
+}
+
+#display-screen {
+  width: 350px;
+  height: 60px;
+  background-color: rgb(192, 170, 170);
+}
+
+button {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  font-weight: bold;
+}
+
+#btn-0 {
+  width: 160px;
+}
