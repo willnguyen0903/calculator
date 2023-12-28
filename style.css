@@ -20,17 +20,20 @@ h1 {
   border: 4px solid rgb(60, 162, 202);
 }
 
-#display-screen {
+#display-screen, #result-screen {
   text-align: right;
   width: 100%;
-  height: 70px;
+  height: 30px;
   background-color: rgb(192, 170, 170);
   margin-bottom: 10px; 
-  padding-top: 10px;
-  font-size: 24px;
+  font-size: 22px;
   font-family: 'Press Start 2P';
 }
-
+#display-screen {
+  margin-bottom: 0px;
+  padding-top: 10px;
+  font-size: 18px;
+}
 .row {
   display: flex;
   justify-content: space-between; /* Distribute buttons evenly in a row */
@@ -51,6 +54,22 @@ button {
 }
 
 h1 {
+  font-family: 'Press Start 2P';
   color:rgb(224, 156, 20);
   text-shadow: 0 0 9px #000000, 0 0 5px #000000; 
+}
+
+footer {
+  font-family: 'Press Start 2P';
+  font-size: 12px;
+}
+
+#logo {
+  transition: transform 0.8s ease-in-out;
+  width: 35px; 
+  height: 35px
+}
+
+#logo:hover {
+  transform: rotate(360deg);
 }
