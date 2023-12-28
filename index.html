@@ -3,41 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>rotaluclac</title>
+  <title>meowculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div id="display-screen"></div>
-    <div id="row1">
-      <button id="btnAC">AC</button>
-      <button id="btn+/-">+/-</button>
-      <button id="btn%">%</button>
-      <button id="btn/">/</button>
+  <div class="container"> 
+    <h1>meowculator</h1>
+    <div id="display-screen" ></div>
+    <div class="row">
+      <button id="btnAC" onclick="clearDisplay()">AC</button>
+      <button id="btn+/-" onclick="toggleSign()">+/-</button>
+      <button id="btn%" onclick="calculatePercentage()">%</button>
+      <button id="btn/" onclick="appendOperator('/')">/</button>
     </div>
-    <div id="row2">
-      <button id="btn7">7</button>
-      <button id="btn8">8</button>
-      <button id="btn9">9</button>
-      <button id="btnx">x</button>
+    <div class="row">
+      <button id="btn7" onclick="appendNumber('7')">7</button>
+      <button id="btn8" onclick="appendNumber('8')">8</button>
+      <button id="btn9" onclick="appendNumber('9')">9</button>
+      <button id="btnx" onclick="appendOperator('*')">x</button>
     </div>
-    <div id="row3">
-      <button id="btn4">4</button>
-      <button id="btn5">5</button>
-      <button id="btn6">6</button>
-      <button id="btn-">-</button>
+    <div class="row">
+      <button id="btn4" onclick="appendNumber('4')">4</button>
+      <button id="btn5" onclick="appendNumber('5')">5</button>
+      <button id="btn6" onclick="appendNumber('6')">6</button>
+      <button id="btn-" onclick="appendOperator('-')">-</button>
     </div>
-    <div id="row4">
-      <button id="btn1">1</button>
-      <button id="btn2">2</button>
-      <button id="btn3">3</button>
-      <button id="btn+">+</button>
+    <div class="row">
+      <button id="btn1" onclick="appendNumber('1')">1</button>
+      <button id="btn2" onclick="appendNumber('2')">2</button>
+      <button id="btn3" onclick="appendNumber('3')">3</button>
+      <button id="btn+" onclick="appendOperator('+')">+</button>
     </div>
-    <div id="row5">
-      <button id="btn0">0</button>
-      <button id="btn.">.</button>
-      <button id="btn=">=</button>
+    <div class="row">
+      <button id="btn0" onclick="appendNumber('0')">0</button>
+      <button id="btn." onclick="appendDecimal('.')">.</button>
+      <button id="btn=" onclick="calculateResult()">=</button>
     </div>
+
+    <script src="script.js"></script>
   </div>
+
 </body>
 </html>

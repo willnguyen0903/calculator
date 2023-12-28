@@ -1,21 +1,40 @@
-body{
+body {
   background-color: rgb(223, 161, 85);
+  display: flex;
+  flex-direction: column; /* Stack containers vertically */
+  align-items: center; /* Center align items horizontally */
+  height: 100vh; /* Take full height of the viewport */
 }
+
+h1 {
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  height: 500px;
-  width: 350px;
+  align-items: center;
   background-image: url("images/catbg.jpg");
-  /* background-color: rgb(88, 211, 170); */
-  padding: 30px 30px 30px 30px;
+  padding: 30px;
   border-radius: 20px;
+  border: 4px solid rgb(60, 162, 202);
 }
 
 #display-screen {
-  width: 350px;
-  height: 60px;
+  text-align: right;
+  width: 100%;
+  height: 70px;
   background-color: rgb(192, 170, 170);
+  margin-bottom: 10px; 
+  padding-top: 10px;
+  font-size: 24px;
+  font-family: 'Press Start 2P';
+}
+
+.row {
+  display: flex;
+  justify-content: space-between; /* Distribute buttons evenly in a row */
+  margin-bottom: 5px; /* Add some margin between rows */
 }
 
 button {
@@ -23,8 +42,15 @@ button {
   width: 80px;
   border-radius: 40px;
   font-weight: bold;
+  margin-left: 5px;
+  border: solid rgb(45, 143, 185);
 }
 
-#btn-0 {
-  width: 160px;
+#btn0 {
+  width: 170px;
+}
+
+h1 {
+  color:rgb(224, 156, 20);
+  text-shadow: 0 0 9px #000000, 0 0 5px #000000; 
 }
